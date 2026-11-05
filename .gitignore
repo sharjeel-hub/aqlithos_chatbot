@@ -1,0 +1,38 @@
+# Python virtual environments
+.venv/
+.venv-*/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# ChromaDB persistent storage and backups
+chroma_db/
+chroma_db_backup_*/
+chroma_data/
+
+# Local datasets
+data/
+
+# Node.js dependencies and builds
+**/node_modules/
+**/dist/
+**/.vite/
+
+# Logs and temporary files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
