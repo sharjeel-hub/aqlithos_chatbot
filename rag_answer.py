@@ -12,8 +12,8 @@ import chromadb
 PROJECT_ID = "aqlithos"
 COLLECTION_NAME = "aqlithos_knowledge"
 
-CHROMA_HOST = "127.0.0.1"
-CHROMA_PORT = 8000
+CHROMA_HOST = os.getenv("CHROMA_HOST", "127.0.0.1")
+CHROMA_PORT = int(os.getenv("CHROMA_PORT", "8000"))
 
 EMBEDDING_MODEL = "text-embedding-3-small"
 EMBEDDING_DIMENSIONS = 1536
